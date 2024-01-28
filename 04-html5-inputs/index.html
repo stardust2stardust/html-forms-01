@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The HTML5 input types</title>
+  </head>
+  <body>
+    <h2>Email address field</h2>
+    <input type="email" id="email" name="email" />
+    <h2>Search field</h2>
+    <input type="search" id="search" name="search" />
+    <h2>Phone number field</h2>
+    <input type="tel" id="tel" name="tel" />
+    <h2>URL field</h2>
+    <input type="url" id="url" name="url" />
+    <h2>Numeric field</h2>
+    <h3>Min 1, Max 10, Step 2</h3>
+    <input type="number" name="age" id="age" min="1" max="10" step="2" />
+    <h3>Min 0, Max 1, Step 0.01</h3>
+    <input
+      type="number"
+      name="change"
+      id="pennies"
+      min="0"
+      max="1"
+      step="0.01"
+    />
+    <h2>Slider controls</h2>
+    <label for="price">Choose a maximum house price: </label>
+    <input
+      type="range"
+      name="price"
+      id="price"
+      min="50000"
+      max="500000"
+      step="100"
+      value="250000"
+    />
+    <output class="price-output" for="price"></output>
+    <h2>Date and time pickers</h2>
+    <h3>datetime-local</h3>
+    <input type="datetime-local" name="datetime" id="datetime" />
+    <h3>month</h3>
+    <input type="month" name="month" id="month" />
+    <h3>week</h3>
+    <input type="week" name="week" id="week" />
+    <h4>Constraining date/time values</h4>
+    <label for="myDate">When are you available this summer?</label>
+    <input
+      type="date"
+      name="myDate"
+      min="2013-06-01"
+      max="2013-08-31"
+      step="7"
+      id="myDate"
+    />
+    <h2>Color picker control</h2>
+    <input type="color" name="color" id="color" />
+    <p>The value returned is always a lowercase 6-value hexadecimal color.</p>
+    <script src="app.js"></script>
+  </body>
+</html>
