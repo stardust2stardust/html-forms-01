@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Web Forms</title>
+  </head>
+  <body>
+    <h2>Basic Form</h2>
+    <form action="#" method="post">
+      <ul>
+        <li>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name" />
+        </li>
+        <li>
+          <label for="mail">Email:</label>
+          <input type="email" name="user_email" id="mail" />
+        </li>
+        <li>
+          <label for="msg">Message:</label>
+          <textarea name="user_message" id="msg"></textarea>
+        </li>
+        <li class="button">
+          <button type="submit">Send your message</button>
+        </li>
+      </ul>
+    </form>
+    <h2>Best practice for required fields w/ a11y</h2>
+    <form action="">
+      <p>
+        Required fields are followed by <span aria-label="required">*</span>.
+      </p>
+      <div>
+        <label for="username">Name: <span aria-label="required">*</span></label>
+        <input id="username" type="text" name="username" required />
+      </div>
+    </form>
+  </body>
+</html>
